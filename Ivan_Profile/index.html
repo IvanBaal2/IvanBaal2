@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========== 1. META & SEO ==========
+       These tags help Google and social media understand your page. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan Lorence Bongon | IT Student Portfolio</title>
+  <meta name="description" content="Portfolio of Ivan Lorence Bongon, an IT student at Lyceum of the Philippines University-Batangas learning web development and networking.">
+  <meta name="author" content="Ivan Lorence Bongon">
+  <meta name="theme-color" content="#0a0e1a">
+
+  <!-- Open Graph: controls the preview when your link is shared on Facebook, LinkedIn, etc. -->
+  <meta property="og:title" content="Ivan Lorence Bongon | IT Student">
+  <meta property="og:description" content="IT student learning web development and networking.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile.jpg">
+
+  <!-- Google Fonts: preconnect makes them load faster -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- "defer" = run the script after the HTML is fully loaded (faster page) -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- ========== 2. HEADER / NAVIGATION ========== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__logo">&lt;Profile<span>/</span>&gt;</a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about" class="nav__link"><span>01.</span> About</a></li>
+        <li><a href="#skills" class="nav__link"><span>02.</span> Skills</a></li>
+        <li><a href="#projects" class="nav__link"><span>03.</span> Projects</a></li>
+        <li><a href="#education" class="nav__link"><span>04.</span> Education</a></li>
+        <li><a href="#contact" class="nav__link"><span>05.</span> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== 3. HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__container container">
+        <div class="hero__content">
+          <p class="hero__greeting">Hi there 👋, my name is</p>
+          <h1 class="hero__name">Ivan Lorence Bongon.</h1>
+          <h2 class="hero__title">
+            I'm a <span class="typing" id="typing"></span><span class="cursor" aria-hidden="true">|</span>
+          </h2>
+          <p class="hero__intro">
+            IT student passionate about web development and networking.
+            I'm learning, building and improving one project at a time.
+          </p>
+          <div class="hero__buttons">
+            <a href="#about" class="btn btn--primary">About Me</a>
+            <a href="#projects" class="btn btn--outline">View My Work</a>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <div class="hero__image-frame">
+            <!-- Replace images/profile.jpg with your own photo (e.g. images/profile.jpg) -->
+            <img src="images/profile.jpg" alt="Portrait of Ivan Lorence Bongon" width="400" height="400">
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ========== 4. ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal"><span>01.</span> About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Hello! I'm <strong>Ivan Lorence Bongon</strong>, an IT student and a developer who loves turning ideas into
+              websites people actually enjoy using. My journey started with curiosity about how
+              websites work, and it quickly became a passion.
+            </p>
+            <p>
+              <strong>Background & interests:</strong> I enjoy front-end design, building useful
+              tools, and exploring how AI can make everyday work easier. Outside code, I like
+              creating video content and learning new things.
+            </p>
+            <p>
+              <strong>Goals:</strong> My goal is to become a professional full-stack developer,
+              build products used by people around the world, and keep growing every day.
+            </p>
+          </div>
+
+          <ul class="about__stats reveal">
+            <li class="stat"><span class="stat__num" data-count="3">0</span><span class="stat__label">Projects built</span></li>
+            <li class="stat"><span class="stat__num" data-count="6">0</span><span class="stat__label">Technologies</span></li>
+            <li class="stat"><span class="stat__num" data-count="1">0</span><span class="stat__label">University</span></li>
+            <li class="stat"><span class="stat__num" data-count="100">0</span><span class="stat__label">% Curiosity</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. SKILLS ==========
+         To add a skill: copy one <article class="skill"> block and change the text + data-level. -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal"><span>02.</span> Skills</h2>
+
+        <div class="skills__grid">
+          <article class="skill reveal">
+            <div class="skill__head"><span class="skill__icon">&lt;/&gt;</span><h3>HTML5</h3><span class="skill__pct">50%</span></div>
+            <div class="skill__bar"><span data-level="50"></span></div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__head"><span class="skill__icon">#</span><h3>CSS3</h3><span class="skill__pct">20%</span></div>
+            <div class="skill__bar"><span data-level="20"></span></div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__head"><span class="skill__icon">JS</span><h3>JavaScript</h3><span class="skill__pct">10%</span></div>
+            <div class="skill__bar"><span data-level="10"></span></div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__head"><span class="skill__icon">php</span><h3>PHP</h3><span class="skill__pct">1%</span></div>
+            <div class="skill__bar"><span data-level="1"></span></div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__head"><span class="skill__icon">db</span><h3>MySQL</h3><span class="skill__pct">8%</span></div>
+            <div class="skill__bar"><span data-level="8"></span></div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__head"><span class="skill__icon">git</span><h3>Git & GitHub</h3><span class="skill__pct">10%</span></div>
+            <div class="skill__bar"><span data-level="10"></span></div>
+          </article>
+        </div>
+
+        <ul class="tools reveal" aria-label="Other tools">
+          <li>Networking</li><li>Cisco Packet Tracer</li><li>VS Code</li>
+          <li>Responsive Design</li><li>AI Tools</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 6. PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal"><span>03.</span> Projects</h2>
+
+        <div class="projects__grid">
+          <article class="project reveal">
+            <div class="project__img">
+              <img src="images/project-1.svg" alt="Screenshot of MediShelf" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">MediShelf</h3>
+              <p>A clinical inventory system for tracking medical supplies, stock levels and usage.</p>
+              <ul class="project__tags"><li>PHP</li><li>MySQL</li><li>CSS</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a href="https://github.com/IvanBaal2" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__img">
+              <img src="images/project-2.svg" alt="Screenshot of the resort website" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Resort Website</h3>
+              <p>A responsive website for a beach resort with rooms, gallery and booking info.</p>
+              <ul class="project__tags"><li>HTML</li><li>CSS</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a href="https://github.com/IvanBaal2" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__img">
+              <img src="images/project-3.svg" alt="Screenshot of AI Office" loading="lazy" width="800" height="500">
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">AI Office</h3>
+              <p>A game-like website where AI "employees" handle tasks inside a virtual office.</p>
+              <ul class="project__tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project__links">
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a href="https://github.com/IvanBaal2" target="_blank" rel="noopener">Code ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. EDUCATION (timeline) ========== -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <h2 class="section__title reveal"><span>04.</span> Education</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date">Present</span>
+            <h3>Information Technology</h3>
+            <p class="timeline__place">Lyceum of the Philippines University-Batangas</p>
+            <p>Studying programming, networking, databases and web development.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== 8. CONTACT ========== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal"><span>05.</span> Contact</h2>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <h3>Let's build something together.</h3>
+            <p>Have a project, an opportunity or just want to say hi? My inbox is always open.</p>
+            <a class="contact__email" href="mailto:Ivanorencebaal@gmail.com">Ivanorencebaal@gmail.com</a>
+
+            <ul class="socials" aria-label="Social media">
+              <li><a href="https://github.com/IvanBaal2" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+              </a></li>
+              <li><a href="https://www.linkedin.com/in/ivan-lorence-bongon-a840a7170/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== 9. FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="nav__logo">&lt;Profile<span>/</span>&gt;</a>
+      <p>Designed & built by <strong>Ivan Lorence Bongon</strong> · © <span id="year"></span></p>
+      <a href="#home" class="footer__top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+</body>
+</html>
